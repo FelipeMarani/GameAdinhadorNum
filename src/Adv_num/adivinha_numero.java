@@ -10,7 +10,7 @@ public class adivinha_numero {
 		
 		int numSecreto = (int)(Math.random()*100);
 		
-		System.out.println("Digite um número para adivinhar");
+		System.out.println("Digite um nÃºmero para adivinhar");
 		
 		int numDigitado = tcd.nextInt();
 		
@@ -18,14 +18,14 @@ public class adivinha_numero {
 		while (!isCorrect) {
 			
 			if(numDigitado > numSecreto) {
-				System.out.println("O número secreto é menor");
+				System.out.println("O nÃºmero secreto Ã© menor");
 			}
 			
 			if(numDigitado < numSecreto) {
-				System.out.println("O número secreto é maior");
+				System.out.println("O nÃºmero secreto Ã© maior");
 			}
 			if(numDigitado == numSecreto) {
-				System.out.println("Você ganhou seu puto");
+				System.out.println("VocÃª ganhou");
 				isCorrect = true;
 				}
 			numDigitado =tcd.nextInt();
